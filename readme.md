@@ -21,10 +21,16 @@ tar xvf httpd-2.4.41.tar
 Now, you should see a directory containing all the files required to build httpd
 
 ## Adding a custom version name
-To add a custom version name, you can navigate to ```include/ap_release.h``` where it contains the httpd versioning parameters and modify the AP_SERVER_BASEPRODUC.
+To add a custom version name, you can navigate to ```include/ap_release.h``` where it contains the httpd versioning parameters and modify the ```AP_SERVER_ADD_STRING```.
 
 ```cpp
-#define AP_SERVER_BASEPRODUC "Apache-GCI"
+#if !AP_SERVER_DEVBUILD_BOOLEAN
+#define AP_SERVER_ADD_STRING "-gci"
+#else
+#ifndef AP_SERVER_ADD_STRING
+#define AP_SERVER_ADD_STRING "-gci-dev"
+#endif
+#endif
 ```
 
 ## Configuring Build
@@ -68,8 +74,8 @@ After starting the server, you can test it by going to ```localhost``` and it sh
 The logs will also include your custom name, to check it you can go to ```logs/error_log``` in your installation.
 
 ```
-[Fri Jan 10 18:46:21.954144 2020] [mpm_event:notice] [pid 25635:tid 139774419078080] AH00489: Apache-GCI/2.4.41 (Unix) configured -- resuming normal operations
-[Fri Jan 10 18:46:21.954483 2020] [core:notice] [pid 25635:tid 139774419078080] AH00094: Command line: '/usr/local/apache2/bin/httpd'
+[Fri Jan 10 20:17:50.912250 2020] [mpm_event:notice] [pid 16855:tid 140452566600640] AH00489: Apache/2.4.$
+[Fri Jan 10 20:17:50.912731 2020] [core:notice] [pid 16855:tid 140452566600640] AH00094: Command line: '/$
 ```
 
 ## Replacing index.html
