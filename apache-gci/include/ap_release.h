@@ -39,7 +39,7 @@
  */
 #define AP_SERVER_BASEVENDOR "Apache Software Foundation"
 #define AP_SERVER_BASEPROJECT "Apache HTTP Server"
-#define AP_SERVER_BASEPRODUCT "Apache-GCI"
+#define AP_SERVER_BASEPRODUCT "Apache"
 
 #define AP_SERVER_MAJORVERSION_NUMBER 2
 #define AP_SERVER_MINORVERSION_NUMBER 4
@@ -49,7 +49,7 @@
 /* Synchronize the above with docs/manual/style/version.ent */
 
 #if !AP_SERVER_DEVBUILD_BOOLEAN
-#define AP_SERVER_ADD_STRING          ""
+#define AP_SERVER_ADD_STRING          "-gci"
 #else
 #ifndef AP_SERVER_ADD_STRING
 #define AP_SERVER_ADD_STRING          "-dev"

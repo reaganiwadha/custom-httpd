@@ -1,3 +1,2 @@
-[Fri Jan 10 18:46:21.954144 2020] [mpm_event:notice] [pid 25635:tid 139774419078080] AH00489: Apache-GCI/2.4.41 (Unix) configured -- resuming normal operations
-[Fri Jan 10 18:46:21.954483 2020] [core:notice] [pid 25635:tid 139774419078080] AH00094: Command line: '/usr/local/apache2/bin/httpd'
-[Fri Jan 10 19:15:55.216223 2020] [mpm_event:notice] [pid 25635:tid 139774419078080] AH00491: caught SIGTERM, shutting down
+[Fri Jan 10 20:17:50.912250 2020] [mpm_event:notice] [pid 16855:tid 140452566600640] AH00489: Apache/2.4.41-gci (Unix) configured -- resuming normal operations
+[Fri Jan 10 20:17:50.912731 2020] [core:notice] [pid 16855:tid 140452566600640] AH00094: Command line: '/usr/local/apache2/bin/httpd'
