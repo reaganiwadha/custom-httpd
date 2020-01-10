@@ -1,4 +1,5 @@
 # Custom Apache HTTPD Server ![GCI Badge](https://img.shields.io/badge/Google%20Code%20In-JBoss%20Community-red?style=flatr&labelColor=fdb900&link=https://codein.withgoogle.com/organizations/jboss-community/)
+![Screenshot of its working](https://raw.githubusercontent.com/reaganiwadha/custom-httpd/screenshot.png)
 
 This guide will help you modify, compile and install a custom HTTPD server!
 
